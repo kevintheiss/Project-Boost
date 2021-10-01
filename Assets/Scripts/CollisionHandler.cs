@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class CollisionHandler : MonoBehaviour
 {
+    [SerializeField] float levelLoadDelay = 2f;
+
     void OnCollisionEnter(Collision other)
     {
         switch(other.gameObject.tag)
@@ -11,12 +13,28 @@ public class CollisionHandler : MonoBehaviour
                 Debug.Log("Friendly bumped.");
                 break;
             case "Finish":
-                LoadNextLevel();
+                StartSuccessSequence();
                 break;
             default:
-                ReloadLevel();
+                StartCrashSequence();
                 break;
         }
+    }
+
+    void StartSuccessSequence()
+    {
+        // TODO: Add sound effect upon success
+        // TODO: Add particle effect upon success
+        GetComponent<Movement>().enabled = false;
+        Invoke("LoadNextLevel", levelLoadDelay);
+    }
+
+    void StartCrashSequence()
+    {
+        // TODO: Add sound effect upon crash
+        // TODO: Add particle effect upon crash
+        GetComponent<Movement>().enabled = false;
+        Invoke("ReloadLevel", levelLoadDelay);
     }
 
     void LoadNextLevel()
