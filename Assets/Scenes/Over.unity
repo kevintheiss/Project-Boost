@@ -501,11 +501,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 125924505181079633, guid: 2f480bc32e4c8224c86da4b5b8794b7f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.7
+      value: 17.92
       objectReference: {fileID: 0}
     - target: {fileID: 125924505181079633, guid: 2f480bc32e4c8224c86da4b5b8794b7f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.6
+      value: 12.96
       objectReference: {fileID: 0}
     - target: {fileID: 125924505181079633, guid: 2f480bc32e4c8224c86da4b5b8794b7f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -797,11 +797,49 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 125924505181079633, guid: 2f480bc32e4c8224c86da4b5b8794b7f, type: 3}
   m_PrefabInstance: {fileID: 2061425083}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1346719117 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5565109724210128020, guid: 2f480bc32e4c8224c86da4b5b8794b7f, type: 3}
+  m_PrefabInstance: {fileID: 137115309}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1346719118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346719117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1452055dfe4770841bf0bd46d8157f61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementVector: {x: 5, y: 0, z: 0}
+  period: 2
 --- !u!4 &1796576010 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 125924505181079633, guid: 2f480bc32e4c8224c86da4b5b8794b7f, type: 3}
   m_PrefabInstance: {fileID: 2022002789}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1972561204 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5565109724210128020, guid: 2f480bc32e4c8224c86da4b5b8794b7f, type: 3}
+  m_PrefabInstance: {fileID: 628192230}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1972561208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972561204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1452055dfe4770841bf0bd46d8157f61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementVector: {x: 0, y: 6, z: 0}
+  period: 2
 --- !u!1001 &2022002789
 PrefabInstance:
   m_ObjectHideFlags: 0
